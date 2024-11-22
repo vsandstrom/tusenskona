@@ -157,7 +157,7 @@ void Tusenskona::InitButtons()
 
 void Tusenskona::InitEncoder()
 {
-    dsy_gpio_pin a, b, click;
+    daisy::Pin a, b, click;
     a     = seed.GetPin(ENC_A_PIN);
     b     = seed.GetPin(ENC_B_PIN);
     click = seed.GetPin(ENC_CLICK_PIN);
@@ -166,7 +166,7 @@ void Tusenskona::InitEncoder()
 
 void Tusenskona::InitLeds()
 {
-    dsy_gpio_pin rpin, gpin, bpin;
+    daisy::Pin rpin, gpin, bpin;
 
     rpin = seed.GetPin(LED_R_PIN);
     gpin = seed.GetPin(LED_G_PIN);
